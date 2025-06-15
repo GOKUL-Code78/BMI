@@ -4,10 +4,11 @@ title=st.title("BMI CALCULATER :")
 header=st.header("ENTER THE INFO")
 weight=st.number_input("ENTER YOUR WEIGHT IN KG")
 height=st.number_input("ENTER YOUR HEIGHT IN METER")
-Square=height **2
-bmi=round(weight/Square,2)
 if height==0:
   st.error("Height cannot be zero")
+else:
+ Square=height **2
+bmi=round(weight/Square,2)
 if st.button("what is my BMI"): 
  bmi
  st.success(f"your BMI is {bmi}")
