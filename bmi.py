@@ -8,9 +8,9 @@ height=st.number_input("ENTER YOUR HEIGHT IN METER")
 
 if st.button("what is my BMI"): 
  if weight<=0:
-  st.warning("weight cannot be zero")
+  st.error("weight cannot be zero")
  elif height<=0:
-  st.warning("height cannot be zero")
+  st.error("height cannot be zero")
  else:
     Square=height ** 2
     bmi=round(weight /Square ,2)
