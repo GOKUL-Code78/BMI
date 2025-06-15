@@ -20,25 +20,25 @@ if st.button("what is my BMI"):
      st.warning("SEVERELY UNDERWEIGHT")
 
     elif 16<= bmi<=16.9:
-     st.warning("MODERATLY UNDERWEIGHT ☹️") 
+       st.warning("MODERATLY UNDERWEIGHT ☹️") 
 
     elif 17<=bmi<=18.4:
-     st.warning("MILDLY UNDERRWEIGHT")
- 
-    elif 18.5<=bmi<=24.9:
-     st.success("NORAML(HEALTHY WEIGHT) 😊")
+       st.warning("MILDLY UNDERRWEIGHT")
   
+    elif 18.5<=bmi<=24.9:
+      st.success("NORAML(HEALTHY WEIGHT) 😊")
+    
     elif 25<=bmi <=29.9:
-     st.warning ("OVERWEIGHT")
-
+       st.warning ("OVERWEIGHT")
+ 
     elif 30<=bmi<=34.9:
-     st.warning("OBESE CLASS I (MODERATE)")
+       st.warning("OBESE CLASS I (MODERATE)")
 
     elif 35 <=bmi <=39.5:
-     st.warning("OBESS CLASS II (SEVERE)")
+       st.warning("OBESS CLASS II (SEVERE)")
 
     elif bmi>=40:
-     st.warning("OBESS CLASS III (VERY SEVERE OR MORBIDLY OBESE)")
+       st.warning("OBESS CLASS III (VERY SEVERE OR MORBIDLY OBESE)")
 
     else:
-     st.error("OBESE CLASSS 3 (VERY SEVERE)")
+       st.error("OBESE CLASSS 3 (VERY SEVERE)")
