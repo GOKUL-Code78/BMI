@@ -5,14 +5,15 @@ header=st.header("ENTER THE INFO")
 weight=st.number_input("ENTER YOUR WEIGHT IN KG")
 height=st.number_input("ENTER YOUR HEIGHT IN METER")
 
-Square=height **2
-bmi=round(weight/Square,2)
+
 if st.button("what is my BMI"): 
  if weight==0:
   st.warning("weight cannot be zero")
  elif height==0:
   st.warning("height cannot be zero")
  else:
+  Square=height **2
+  bmi=round(weight/Square,2)
   st.success(f"your BMI is {bmi}")
 
  if bmi<16:
