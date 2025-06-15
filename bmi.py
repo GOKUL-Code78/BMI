@@ -16,7 +16,7 @@ if st.button("what is my BMI"):
   bmi=round(weight /Square ,2)
   st.success(f"your BMI is {bmi}")
 
- if bmi<16:
+ if bmi<=16:
    st.warning("SEVERELY UNDERWEIGHT")
 
  elif 16<= bmi<=16.9:
