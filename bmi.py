@@ -4,17 +4,19 @@ title=st.title("BMI CALCULATER :")
 header=st.header("ENTER THE INFO")
 weight=st.number_input("ENTER YOUR WEIGHT IN KG")
 height=st.number_input("ENTER YOUR HEIGHT IN METER")
-if height==0.1:
-  st.error("Height cannot be zero")
-else:
- Square=height **2
+
+Square=height **2
 bmi=round(weight/Square,2)
 if st.button("what is my BMI"): 
- bmi
- st.success(f"your BMI is {bmi}")
+ if weight==0:
+  st.warning("weight cannot be zero")
+ elif height==0:
+  st.warning("height cannot be zero")
+ else:
+  st.success(f"your BMI is {bmi}")
 
  if bmi<16:
-  st.warning("SEVERELY UNDERWEIGHT")
+   st.warning("SEVERELY UNDERWEIGHT")
 
  elif 16<= bmi<=16.9:
   st.warning("MODERATLY UNDERWEIGHT ☹️") 
